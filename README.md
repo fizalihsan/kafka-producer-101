@@ -1,5 +1,5 @@
 
-This repo has a simple example to produce messages to a Kafka topic using Java 11 & Spring Boot.
+This repo has a simple example to produce messages to a Kafka topic using Java 11, Spring Boot, Kafka 2.13-3.2.0.
 
 
 ## Kafka Setup in Mac
@@ -47,6 +47,12 @@ To create a Kafka topic
 
 ```bash
 bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic fizaltopic1
+```
+
+To view the topics and partition details
+
+```bash
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --describe
 ```
 
 ## Kafka Producer and Consumer Examples
